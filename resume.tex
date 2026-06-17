@@ -1,0 +1,226 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{fontawesome7}
+\usepackage{multicol}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[normalem]{ulem}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.45in}
+\addtolength{\footskip}{-0.1in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1.2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+\begin{document}
+\emergencystretch=2em
+
+%-----------HEADER-----------
+\begin{center}
+    \textbf{\Huge \scshape Hariharen S S}
+\end{center}
+\begin{center}
+    \vspace{-2pt}
+    \href{tel:+919894545969}{\faPhone\ \uline{9894545969}} \quad
+    \href{mailto:thisishariharen@gmail.com}{\faEnvelope\ \uline{thisishariharen@gmail.com}} \quad
+    \href{https://www.hariharen.site}{\faGlobe\ \uline{hariharen.site}} \quad
+    \href{https://www.linkedin.com/in/hariharen9}{\faLinkedin\ \uline{linkedin.com/hariharen9}} \quad
+    \href{https://github.com/hariharen9}{\faGithub\ \uline{github.com/hariharen9}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\vspace{-8pt}
+\begin{center}
+    \begin{tabular}{c}
+        \hline
+    \end{tabular}
+    \parbox{0.95\textwidth}{
+        % \vspace{3pt}
+        % {\centering\small\textit{Software Engineer with 4+ years of experience building backend systems, Kubernetes automation, and cloud infrastructure at IBM Cloud. Strong in Go, Python, Docker, and Kubernetes. Proven track record of reducing operational toil, improving reliability, and building developer tools used by thousands.}\par}
+        \vspace{2pt}
+        \vspace{3pt}
+        {\centering\small\textit{Software Engineer with 4+ years of experience designing, automating, and operating distributed microservices and cloud-native infrastructure at IBM Cloud. Proficient in Go, Python, Docker, and Kubernetes with a proven record of eliminating operational toil through controller-native solutions and automation-first engineering. Active open-source developer with nearly \textbf{20,000 downloads} across published CLI and AI tools, alongside published research in cloud systems architecture.}\par}
+        \vspace{2pt}
+    }
+    \begin{tabular}{c}
+        \hline
+    \end{tabular}
+\end{center}
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\vspace{-5pt}
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Tata Consultancy Services}{July 2022 -- Present}
+    {\textbf{Cloud Software Engineer} -- Client: \textbf{IBM Cloud}}{Bangalore, Karnataka}
+    \resumeItemListStart
+      \resumeItem{Built a parallelized Python CLI to automate Kubernetes network topology provisioning and CRD validation across multiple environments, replacing error-prone manual workflows with a deterministic orchestration system.}
+      \resumeItem{Reduced end-to-end environment setup time by 95\% (from hours to minutes) and drove cross-team adoption as the standard tooling for network CRD validation, integrated debugging, and teardown automation.}
+      \resumeItem{Engineered a Go controller-native garbage collector to replace brittle legacy cleanup scripts, reducing orphaned Kubernetes object accumulation to near-zero and cutting infrastructure maintenance overhead by 90\%.}
+      \resumeItem{Led the production migration from Mezmo (LogDNA) to IBM Cloud Logs (ICL), standardizing logging pipelines across all environments, improving alert fidelity, and reducing observability operational costs.}
+      \resumeItem{Elevated system reliability by defining SLI/SLO-aligned observability standards (Prometheus/Grafana dashboards, alerting runbooks, and incident playbooks) and resolving critical runtime panics and production bugs across key microservices.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {\href{https://halcyon.netlify.app/}{Halcyon}}{March 2020 -- June 2022}
+    {\textbf{Co-Founder \& Lead Developer}}{Coimbatore, Tamil Nadu}
+    \resumeItemListStart
+      \resumeItem{Co-founded a software development agency and delivered 5+ production-grade solutions for SMB clients, owning the full SDLC from requirements gathering to deployment across mobile, web, and backend stacks.}
+      \resumeItem{Built a inventory and billing management system for a retail business and multiple Flutter-based cross-platform mobile applications, driving measurable efficiency gains and repeat client engagements.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\vspace{-15pt}
+\begin{small}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*,label={}]
+\vspace{-20pt}
+\item \textbf{Languages:} Go, Python, TypeScript
+\item \textbf{Cloud \& Infrastructure:} IBM Cloud, AWS, Azure
+\item \textbf{Containers \& Orchestration:} Docker, Kubernetes, OpenShift
+\item \textbf{Frontend:} React, Next.js, Flutter
+\item \textbf{Backend \& APIs:} gRPC, REST, Firebase, Supabase
+\item \textbf{CI/CD:} Jenkins, GitHub Actions, Azure DevOps
+\item \textbf{Databases:} PostgreSQL, MongoDB, Firestore, SQL
+\item \textbf{Observability:} Prometheus, Grafana, IBM Cloud Logs
+\end{itemize}
+\end{multicols}
+\end{small}
+
+%-----------CERTIFICATIONS & PUBLICATIONS-----------
+% NEXT CERT TO PURSUE: CKA (Certified Kubernetes Administrator) — highest ROI for my profile.
+\section{Certifications \& Publications}
+\begin{small}
+\vspace{-10pt}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*,label={}]
+    \item {\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/30a934e9064e4c779bf003b9f4b57493}{AWS Cloud Practitioner} -}\textbf{ AWS }
+    \item {\href{https://www.credly.com/badges/3445cb4e-607a-4800-bfe3-9b130496026b/public_url}{IBM Cloud Advocate V2} -}\textbf{ IBM }
+\end{itemize}
+\end{multicols}
+\vspace{-6pt}
+\begin{itemize}[leftmargin=*,label={}]
+    \item \textbf{Paper:} \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5537379}{Deconstructing the Netflix Machine: A Case Study of Netflix's Production-to-Delivery Cloud Ecosystem} -- \textbf{SSRN}, \textit{Sep 2025}
+\end{itemize}
+\end{small}
+
+
+%-----------PERSONAL PROJECTS-----------
+
+\section{Personal Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{CLI \& Automation Tools}}
+      {$|$\hspace{0.5em}\emph{\textbf{Go, Python}}}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{\href{https://github.com/hariharen9/ffmpeg-this}{FFmpeg-this}}, an open-source Python CLI that translates human-readable media operation syntax into complex FFmpeg pipelines; published on \href{https://pypi.org/project/peg-this/}{PyPI} with \textbf{7,000+ downloads}.}
+        \resumeItem{Built \textbf{\href{https://github.com/hariharen9/kessler}{Kessler}}, a \href{https://kesslercli.netlify.app/}{\textbf{Go} TUI} and \href{https://marketplace.visualstudio.com/items?itemName=hariharen.kessler-vscode}{VS Code extension} that reclaims disk space by scanning \textbf{30+ language ecosystems} for build caches and dependency folders, using a custom rules engine that respects active processes and gitignore rules.}
+        \resumeItem{Created \textbf{\href{https://github.com/hariharen9/gitsync}{GitSync}}, a Go CLI automating multi-branch synchronization, upstream rebasing, and stale branch cleanup --- eliminating repetitive manual Git workflows for multi-remote repositories.}
+      \resumeItemListEnd
+
+    \vspace{-2pt}
+    \resumeProjectHeading
+      {\textbf{AI Developer Tools}}
+      {$|$\hspace{0.5em}\emph{\textbf{TypeScript, Python, Go}}}
+      \resumeItemListStart
+        \resumeItem{Created \textbf{\href{https://github.com/hariharen9/enhance-this}{Enhance-this}}, a cross-platform CLI utility (npm/pip) for local AI prompt optimization, achieving \textbf{12,000+ organic downloads} by solving high-friction developer workflows.}
+        \resumeItem{Engineered \textbf{\href{https://github.com/hariharen9/localseek}{Localseek}}, a \href{https://marketplace.visualstudio.com/items?itemName=Hariharen.localseek}{VS Code extension} enabling fully offline AI code assistance via local models, achieving \textbf{500+ installs} and eliminating cloud API dependencies to preserve developer privacy.}
+      \resumeItemListEnd
+
+    \vspace{-2pt}
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/hariharen9/spendwiser}{Automated Finance Tracker} (\href{https://spenditwiser.netlify.app/}{SpendWiser})}}
+      {$|$\hspace{0.5em}\emph{\textbf{React, Firebase, Netlify}}}
+      \resumeItemListStart
+        \resumeItem{Built a native Android bridge (BroadcastReceiver + React Native Headless JS) to intercept bank SMS alerts at the OS level, bypassing restrictive app store policies and eliminating dependency on expensive third-party sync APIs (e.g., Plaid).}
+        \resumeItem{Architected a privacy-first serverless pipeline with on-device SMS pre-filtering and a cascading bring-your-own AI model engine that autonomously parses unstructured transaction data into a real-time personal finance dashboard.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Coimbatore Institute of Technology}{June 2019 -- April 2022}
+      {\textbf{Bachelor} of Engineering in Computer Science (CGPA -- 8.7/10)}{Coimbatore, Tamil Nadu}
+      \vspace{6pt}
+    \resumeSubheading
+      {PSG College of Technology}{June 2016 -- April 2019}
+      {\textbf{Diploma} in Electronics and Communication Engineering (CGPA -- 9.5/10)}{Coimbatore, Tamil Nadu}
+  \resumeSubHeadingListEnd
+
+\end{document}

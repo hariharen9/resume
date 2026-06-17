@@ -1,0 +1,29 @@
+# LaTeX auxiliary/temporary build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.dvi
+*.xdv
+*.pdfsync
+
+# Backup and swap files
+*~
+*.bak
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled PDF
+# Uncomment the line below if you do not want to track the compiled resume.pdf in git.
+# *.pdf
