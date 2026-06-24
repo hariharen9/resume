@@ -13,7 +13,6 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-% \usepackage{ragged2e}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -29,8 +28,6 @@
 \addtolength{\topmargin}{-0.8in}
 \addtolength{\textheight}{1.45in}
 \addtolength{\footskip}{-0.1in}
-
-
 
 \urlstyle{same}
 
@@ -100,23 +97,6 @@
 \end{center}
 
 %-----------Professional Summary-----------
-% \vspace{-8pt}
-% \begin{center}
-%     \begin{tabular}{c}
-%         \hline
-%     \end{tabular}
-%     \parbox{0.95\textwidth}{
-%         \vspace{3pt}
-%         % \center\small\textit{Results-driven Software Engineer with 3 years of experience building and automating scalable cloud infrastructure at enterprise scale (IBM Cloud). Proficient in GoLang, Python, and Kubernetes with a proven track record of enhancing system reliability and performance. Also experienced in full-stack web and mobile application development.}
-%        {\centering\small\textit{Software Engineer with 3+ years of experience building and automating enterprise-grade cloud infrastructure at IBM Cloud. Proficient in Go, Python, Docker, and Kubernetes, with a proven track record of optimizing system reliability and performance. Complemented by a strong background in full-stack Web and Mobile application development.}\par}
-%         \vspace{2pt}
-%     }
-%     \begin{tabular}{c}
-%         \hline
-%     \end{tabular}
-% \end{center}
-% \vspace{-5pt}
-%-----------Professional Summary-----------
 \vspace{-8pt}
 \begin{center}
     \begin{tabular}{c}
@@ -124,7 +104,7 @@
     \end{tabular}
     \parbox{0.95\textwidth}{
         \vspace{3pt}
-        {\centering\small\textit{Software Engineer with 4+ years of experience building and automating microservices and cloud infrastructure at IBM Cloud. Proficient in Go, Python, Docker, and Kubernetes. Dedicated to maximizing system reliability and reducing operational toil through automation. Active open-source developer, shipping CLI tools and utilities with 20,000+ total downloads.}\par} % 
+        {\centering\small\textit{Software Engineer with 4+ years of experience building and automating microservices and cloud infrastructure at IBM Cloud. Proficient in Go, Python, Docker, and Kubernetes. Focused on shipping automation that reduces manual toil and keeps infrastructure stable. Active open-source developer with 20,000+ downloads across published CLI and AI tools.}\par}
         \vspace{2pt}
     }
     \begin{tabular}{c}
@@ -142,18 +122,18 @@
   {\textbf{Cloud Software Engineer} -- Client: \textbf{IBM Cloud}}{Bangalore, Karnataka}
 
   \resumeItemListStart
-    \resumeItem{Built a Python CLI to provision complex Kubernetes network topologies for large-scale load testing. It parallelizes resource generation and application to spin up thousands of network objects in minutes, cutting setup time by 95\%.}
-    \resumeItem{Added advanced testing features like live environment simulation, node-specific targeting, and real-time metrics. It replaced older sequential scripts and became the standard tool for CRD validation across 4+ teams.}
-    \resumeItem{Wrote a 2-pass Kubernetes garbage collection controller in Go to replace unreliable cron jobs. It runs as a native reconciliation loop, eliminating 99\% of orphaned cloud resources and manual cleanup toil.}
-    \resumeItem{Led the logging migration from Mezmo (LogDNA) to IBM Cloud Logs across 3 core cluster controllers. Standardized the logging pipelines, dashboards, and alerting rules to improve observability and reduce costs.}
-    \resumeItem{Maintained the team's cluster controllers by fixing runtime panics, patching concurrency bugs, and shipping general code enhancements to keep the infrastructure stable.}
-\resumeItemListEnd
+    \resumeItem{Built a Python CLI to provision complex Kubernetes network topologies for large-scale load testing. It parallelizes resource generation to spin up thousands of network objects in minutes, cutting setup time by 95\%.}
+    \resumeItem{Added live environment simulation, node-specific targeting, and real-time metrics. Replaced older sequential scripts and became the standard CRD validation tool across 4+ teams.}
+    \resumeItem{Wrote a 2-pass Kubernetes garbage collection controller in Go to replace unreliable cron jobs. Runs as a native reconciliation loop, eliminating 99\% of orphaned cloud resources and the manual cleanup work that came with them.}
+    \resumeItem{Led the logging migration from Mezmo (LogDNA) to IBM Cloud Logs across 3 core cluster controllers, standardizing pipelines, dashboards, and alerting rules to improve observability and reduce costs.}
+    \resumeItem{Maintained cluster controller stability by resolving runtime panics, patching concurrency bugs, and shipping incremental enhancements across the team's core microservices.}
+  \resumeItemListEnd
 
 \resumeSubheading
   {\href{https://halcyon.netlify.app/}{Halcyon}}{March 2020 -- April 2022}
   {\textbf{Co-Founder \& Lead Developer}}{Coimbatore, Tamil Nadu}
   \resumeItemListStart
-    \resumeItem{Bootstrapped a freelance software agency during college, managing the end-to-end architecture and delivery of 5+ full-stack projects (inventory systems, websites) for local businesses.}
+    \resumeItem{Bootstrapped a freelance software agency during college, owning end-to-end architecture and delivery of 5+ full-stack projects — inventory systems, billing tools, and marketing sites for local businesses.}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -165,47 +145,45 @@
 \begin{multicols}{2}
 \begin{itemize}[leftmargin=*,label={}]
 \vspace{-20pt}
-\item \textbf{Languages:} Go, Python, JavaScript
+\item \textbf{Languages:} Go, Python, TypeScript
 \item \textbf{Cloud Platforms:} IBM Cloud, AWS
-\item \textbf{Container Management:} Docker, Kubernetes, OpenShift
-\item \textbf{CI/CD \& APIs:} gRPC, REST, Jenkins, Azure DevOps
+\item \textbf{Container Orchestration:} Docker, Kubernetes, OpenShift
+\item \textbf{Backend \& APIs:} gRPC, REST, Firebase, Supabase
+\item \textbf{CI/CD:} Jenkins, GitHub Actions
 \item \textbf{Databases:} PostgreSQL, MongoDB, Firestore
 \item \textbf{Monitoring:} Prometheus, Grafana
+\item \textbf{Frontend:} React, Next.js, Flutter
 \end{itemize}
 \end{multicols}
 \end{small}
 
 %-----------Certifications & Publications-----------
-\section{Certifications \& Publications}
+\section{Certifications \& Papers}
 \begin{small}
 \vspace{-10pt}
 \begin{multicols}{2}
 \begin{itemize}[leftmargin=*,label={}]
-    \item {\href{https://drive.google.com/file/d/1zCkpf0KienaeDWD4-gX_RxtU2jWzxQHt/view}{AWS Cloud Practitioner} -}\textbf{ AWS }
-    \item {IBM Cloud Advocate V2 -}\textbf{ IBM }
-    % \item {Python Specialization -}\textbf{ Univ. of Michigan (Coursera)}
-    % \item {Go: The Complete Developer's Guide -}\textbf{ Udemy }
+    \item {\href{https://drive.google.com/file/d/1zCkpf0KienaeDWD4-gX_RxtU2jWzxQHt/view}{AWS Cloud Practitioner} -}\textbf{ AWS}
+    \item {IBM Cloud Advocate V2 -}\textbf{ IBM}
 \end{itemize}
 \end{multicols}
-\vspace{-6pt} % Adjust this value to pull the publication line up or down
+\vspace{-6pt}
 \begin{itemize}[leftmargin=*,label={}]
-    \item \textbf{Paper:} \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5537379}{Deconstructing the Netflix Machine: A Case Study of Netflix's Production-to-Delivery Cloud Ecosystem} -- \textbf{ SSRN}, \textit{Sep 2025}
+    \item \textbf{Paper:} \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5537379}{Deconstructing the Netflix Machine: A Case Study of Netflix's Production-to-Delivery Cloud Ecosystem} -- \textbf{SSRN}, \textit{Sep 2025}
 \end{itemize}
 \end{small}
-
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
  \resumeSubheading
       {Coimbatore Institute of Technology}{June 2019 -- April 2022}
-      {\textbf{Bachelor} of Engineering in Computer Science (CGPA - 8.7/10)} {Coimbatore, Tamil Nadu}
+      {\textbf{Bachelor} of Engineering in Computer Science (CGPA - 8.7/10)}{Coimbatore, Tamil Nadu}
       \vspace{6pt}
  \resumeSubheading
       {PSG College of Technology}{June 2016 -- April 2019}
-      {\textbf{Diploma} in Electronics and Communication Engineering (CGPA - 9.5/10)} {Coimbatore, Tamil Nadu}
+      {\textbf{Diploma} in Electronics and Communication Engineering (CGPA - 9.5/10)}{Coimbatore, Tamil Nadu}
   \resumeSubHeadingListEnd
-
 
 %-----------Personal Projects-----------
 \section{Personal Projects}
@@ -215,9 +193,9 @@
     {\textbf{CLI \& Developer Tools}}
     {$|$\hspace{0.5em}\emph{\textbf{Go, Python, TypeScript}}}
     \resumeItemListStart
-      \resumeItem{Built \textbf{\href{https://pegthis.netlify.app/}{FFmpeg-this}}, a Python CLI wrapper that abstracts FFmpeg's complex flag syntax into clean, chainable commands for media processing. \textbf{8,000+ downloads} on \href{https://pypi.org/project/peg-this/}{PyPI}.}
-      \resumeItem{Created \textbf{\href{https://github.com/hariharen9/kessler}{Kessler}}, \href{https://kesslercli.netlify.app/}{a \textbf{Go} TUI \& \href{https://marketplace.visualstudio.com/items?itemName=hariharen.kessler-vscode}{VS Code extension}} that scans \textbf{30+ language ecosystems} for stale build caches and dependency artifacts, safely reclaiming disk space with a rules engine that protects active projects and respects version control state.}
-      \resumeItem{Built \textbf{\href{https://github.com/hariharen9/scync}{Scync}}, an open-source zero-knowledge secrets manager with AES-256 client-side encryption and WebAuthn PRF biometric unlock. Server receives only encrypted blobs, plaintext is architecturally unreachable. Published on Product Hunt and Peerlist.}
+      \resumeItem{Built \textbf{\href{https://pegthis.netlify.app/}{FFmpeg-this}}, a Python CLI that abstracts FFmpeg's complex flag syntax into clean, chainable commands for media processing. \textbf{8,000+ downloads} on \href{https://pypi.org/project/peg-this/}{PyPI}.}
+      \resumeItem{Created \textbf{\href{https://github.com/hariharen9/kessler}{Kessler}}, \href{https://kesslercli.netlify.app/}{a Go TUI \& \href{https://marketplace.visualstudio.com/items?itemName=hariharen.kessler-vscode}{VS Code extension}} that scans \textbf{30+ language ecosystems} for stale build caches and dependency artifacts, safely reclaiming disk space with a rules engine that protects active projects and respects version control state.}
+      \resumeItem{Built \textbf{\href{https://github.com/hariharen9/scync}{Scync}}, a zero-knowledge secrets manager with AES-256 client-side encryption and WebAuthn PRF biometric unlock. The server receives only encrypted blobs, plaintext is architecturally unreachable. Published on Product Hunt and Peerlist.}
     \resumeItemListEnd
 
     \vspace{-2pt}
@@ -225,8 +203,8 @@
     {\textbf{AI Developer Tools}}
     {$|$\hspace{0.5em}\emph{\textbf{Python, Go, Ollama}}}
     \resumeItemListStart
-      \resumeItem{Wrote \textbf{\href{https://github.com/hariharen9/enhance-this}{Enhance}}, a prompt engineering CLI that rewrites and enriches prompts locally via Ollama for better LLM outputs, no cloud APIs or costs involved. Published on \href{https://pypi.org/project/enhance-this/}{PyPI} with \textbf{13,000+ downloads}.}
-      \resumeItem{Created \textbf{\href{https://github.com/hariharen9/localseek}{Localseek}}, a \href{https://marketplace.visualstudio.com/items?itemName=Hariharen.localseek}{VS Code extension} that provides AI-powered code assistance entirely offline using local models — no code ever leaves your machine. \textbf{500+ installs} on the marketplace.}
+      \resumeItem{Wrote \textbf{\href{https://github.com/hariharen9/enhance-this}{Enhance}}, a prompt engineering CLI that rewrites and enriches prompts locally via Ollama for better LLM outputs, no cloud APIs, no costs. Published on \href{https://pypi.org/project/enhance-this/}{PyPI} with \textbf{13,000+ downloads}.}
+      \resumeItem{Created \textbf{\href{https://github.com/hariharen9/localseek}{Localseek}}, a \href{https://marketplace.visualstudio.com/items?itemName=Hariharen.localseek}{VS Code extension} for fully offline AI code assistance via local models, no code ever leaves your machine. \textbf{500+ installs} on the marketplace.}
     \resumeItemListEnd
 
     \vspace{-2pt}
@@ -234,7 +212,7 @@
     {\textbf{\href{https://github.com/hariharen9/spendwiser}{SpendWiser}}}
     {$|$\hspace{0.5em}\emph{\textbf{React, Firebase, Netlify}}}
     \resumeItemListStart
-        \resumeItem{Developed an Android SMS listener (BroadcastReceiver + Headless JS) that intercepts bank transaction alerts and forwards them to a self-hosted API, replacing expensive bank-syncing services like Plaid with a fully free, self-hostable alternative.}
+        \resumeItem{Built an Android SMS listener (BroadcastReceiver + Headless JS) that intercepts OS-level bank transaction alerts and forwards them to a self-hosted API, replacing third-party bank-sync services like Plaid with a free, self-hostable alternative.}
         \resumeItem{Parses raw SMS into structured transaction data on-device using a local LLM, displayed on a real-time React + Firebase spending dashboard. Zero recurring costs.}
     \resumeItemListEnd
 
